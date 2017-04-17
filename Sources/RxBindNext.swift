@@ -23,18 +23,38 @@
 //http://blog.xebia.com/function-references-in-swift-and-retain-cycles/
 //https://medium.com/@gnod94/improvements-of-flatmap-function-in-rxswift-5d70add0fc88#.mjmtg1sp3
 
+
 import Foundation
 import RxSwift
 import RxCocoa
 
 public extension ObservableType {
-
-    public func bindNext<A: AnyObject>(weak obj: A, _ onNext: @escaping (A) -> ((Self.E) -> Swift.Void)) -> Disposable {
-
+    
+    public func bindNext<A: AnyObject>(weak obj: A,
+                         _ onNext: @escaping (A) -> ((Self.E) -> Swift.Void)) -> Disposable {
+        
         return self.bindNext { [weak obj] (value: Self.E) in
             guard let `self` = obj else { return }
             onNext(self)(value)
         }
     }
 }
+
+
+extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingStrategy {
+    public func drive<A: AnyObject>(weak obj: A,
+                      _ onNext: @escaping (A) -> ((Self.E) -> Swift.Void),
+                      onCompleted: (() -> Void)? = nil,
+                      onDisposed: (() -> Void)? = nil) -> Disposable {
+        
+        return self.drive(
+            onNext: { [weak obj] (value: Self.E) in
+                guard let `self` = obj else { return }
+                onNext(self)(value)
+            },
+            onCompleted: onCompleted,
+            onDisposed: onDisposed)
+    }
+}
+
 

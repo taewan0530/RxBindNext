@@ -33,10 +33,10 @@ public extension ObservableType {
     public func bindNext<A: AnyObject>(weak obj: A,
                          _ onNext: @escaping (A) -> ((Self.E) -> Swift.Void)) -> Disposable {
         
-        return self.bindNext { [weak obj] (value: Self.E) in
+        return self.bind(onNext: { [weak obj] (value: Self.E) in
             guard let `self` = obj else { return }
             onNext(self)(value)
-        }
+        })
     }
 }
 

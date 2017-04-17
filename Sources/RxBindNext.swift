@@ -41,6 +41,7 @@ public extension ObservableType {
 }
 
 
+
 extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingStrategy {
     public func drive<A: AnyObject>(weak obj: A,
                       _ onNext: @escaping (A) -> ((Self.E) -> Swift.Void),

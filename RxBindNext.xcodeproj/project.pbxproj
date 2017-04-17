@@ -24,11 +24,11 @@
 		089764550E8D2A70AEBA2542 /* Pods-RxBindNext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBindNext.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxBindNext/Pods-RxBindNext.release.xcconfig"; sourceTree = "<group>"; };
 		0BA74530A19CE094C2EC94C4 /* Pods-RxBindNext-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBindNext-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxBindNext-iOS/Pods-RxBindNext-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		0EB6A8A87668642D23C1C610 /* Pods_RxBindNext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBindNext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12E0BCEE1E816DA4000F3E58 /* RxBindNext-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RxBindNext-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E0BCEE1E816DA4000F3E58 /* RxBindNext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxBindNext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E0BCF01E816DA4000F3E58 /* RxBindNext-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxBindNext-iOS.h"; sourceTree = "<group>"; };
 		12E0BCF11E816DA4000F3E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E0BCFC1E816DE4000F3E58 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		327BCDDF1E80F80500054831 /* RxBindNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxBindNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327BCDDF1E80F80500054831 /* RxBindNextExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxBindNextExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327BCDE21E80F80500054831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		327BCDE41E80F80500054831 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		327BCDE71E80F80500054831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 		327BCDE01E80F80500054831 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				327BCDDF1E80F80500054831 /* RxBindNext.app */,
-				12E0BCEE1E816DA4000F3E58 /* RxBindNext-iOS.framework */,
+				327BCDDF1E80F80500054831 /* RxBindNextExample.app */,
+				12E0BCEE1E816DA4000F3E58 /* RxBindNext.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		12E0BCED1E816DA4000F3E58 /* RxBindNext-iOS */ = {
+		12E0BCED1E816DA4000F3E58 /* RxBindNext */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12E0BCF91E816DA4000F3E58 /* Build configuration list for PBXNativeTarget "RxBindNext-iOS" */;
+			buildConfigurationList = 12E0BCF91E816DA4000F3E58 /* Build configuration list for PBXNativeTarget "RxBindNext" */;
 			buildPhases = (
 				C555B4F42CCB76E9CAF9BA25 /* [CP] Check Pods Manifest.lock */,
 				12E0BCE91E816DA4000F3E58 /* Sources */,
@@ -169,14 +169,14 @@
 			);
 			dependencies = (
 			);
-			name = "RxBindNext-iOS";
+			name = RxBindNext;
 			productName = "RxBindNext-iOS";
-			productReference = 12E0BCEE1E816DA4000F3E58 /* RxBindNext-iOS.framework */;
+			productReference = 12E0BCEE1E816DA4000F3E58 /* RxBindNext.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		327BCDDE1E80F80500054831 /* RxBindNext */ = {
+		327BCDDE1E80F80500054831 /* RxBindNextExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 327BCDF11E80F80500054831 /* Build configuration list for PBXNativeTarget "RxBindNext" */;
+			buildConfigurationList = 327BCDF11E80F80500054831 /* Build configuration list for PBXNativeTarget "RxBindNextExample" */;
 			buildPhases = (
 				C11DE0D1C0AC488F6876DBEF /* [CP] Check Pods Manifest.lock */,
 				327BCDDB1E80F80500054831 /* Sources */,
@@ -189,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = RxBindNext;
+			name = RxBindNextExample;
 			productName = RxBindNext;
-			productReference = 327BCDDF1E80F80500054831 /* RxBindNext.app */;
+			productReference = 327BCDDF1E80F80500054831 /* RxBindNextExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -229,8 +229,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				327BCDDE1E80F80500054831 /* RxBindNext */,
-				12E0BCED1E816DA4000F3E58 /* RxBindNext-iOS */,
+				327BCDDE1E80F80500054831 /* RxBindNextExample */,
+				12E0BCED1E816DA4000F3E58 /* RxBindNext */,
 			);
 		};
 /* End PBXProject section */
@@ -390,7 +390,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.taewan.RxBindNext-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.taewan.RxBindNext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -415,7 +415,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.taewan.RxBindNext-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.taewan.RxBindNext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -524,7 +524,7 @@
 				DEVELOPMENT_TEAM = C8LLTKJ2XT;
 				INFOPLIST_FILE = RxBindNext/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.taewan.RxBindNext;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.taewan.RxBindNextExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -538,7 +538,7 @@
 				DEVELOPMENT_TEAM = C8LLTKJ2XT;
 				INFOPLIST_FILE = RxBindNext/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.taewan.RxBindNext;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.taewan.RxBindNextExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -547,7 +547,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12E0BCF91E816DA4000F3E58 /* Build configuration list for PBXNativeTarget "RxBindNext-iOS" */ = {
+		12E0BCF91E816DA4000F3E58 /* Build configuration list for PBXNativeTarget "RxBindNext" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12E0BCF71E816DA4000F3E58 /* Debug */,
@@ -565,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		327BCDF11E80F80500054831 /* Build configuration list for PBXNativeTarget "RxBindNext" */ = {
+		327BCDF11E80F80500054831 /* Build configuration list for PBXNativeTarget "RxBindNextExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				327BCDF21E80F80500054831 /* Debug */,

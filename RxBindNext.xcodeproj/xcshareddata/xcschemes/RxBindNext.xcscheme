@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "12E0BCED1E816DA4000F3E58"
-               BuildableName = "RxBindNext-iOS.framework"
-               BlueprintName = "RxBindNext-iOS"
+               BuildableName = "RxBindNext.framework"
+               BlueprintName = "RxBindNext"
                ReferencedContainer = "container:RxBindNext.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "12E0BCED1E816DA4000F3E58"
-            BuildableName = "RxBindNext-iOS.framework"
-            BlueprintName = "RxBindNext-iOS"
+            BuildableName = "RxBindNext.framework"
+            BlueprintName = "RxBindNext"
             ReferencedContainer = "container:RxBindNext.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "12E0BCED1E816DA4000F3E58"
-            BuildableName = "RxBindNext-iOS.framework"
-            BlueprintName = "RxBindNext-iOS"
+            BuildableName = "RxBindNext.framework"
+            BlueprintName = "RxBindNext"
             ReferencedContainer = "container:RxBindNext.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
